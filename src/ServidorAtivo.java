@@ -14,7 +14,7 @@ public class ServidorAtivo extends Pessoa
 	private float contribPrev;
 	private float totalLiquido;
 	
-	public enum orgao{
+	public enum Orgao{
 		ADEAL, 
 		AMGESP, 
 		ARSAL, 
