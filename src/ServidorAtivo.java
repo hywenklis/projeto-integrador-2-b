@@ -12,6 +12,6 @@ public class ServidorAtivo extends Pessoa {
     private float IRRF;
     private float contribPrev;
     private float totalLiquido;
-	private Orgao orgao;
+    private Orgao orgao;
 }
 
