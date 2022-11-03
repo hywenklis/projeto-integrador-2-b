@@ -1,6 +1,5 @@
 
 public class servidorInativo extends Pessoa {
-	
 	private String vinculo;
 	private float total;
 	private float liquido;
@@ -11,5 +10,4 @@ public class servidorInativo extends Pessoa {
 	private float irrf;
 	private float contribuicao;
 	private float previdencia;
-
 }
