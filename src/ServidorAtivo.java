@@ -2,16 +2,16 @@ import java.time.LocalDate;
 
 public class ServidorAtivo extends Pessoa {
     private LocalDate periodo;
-    private float remuneracao;
-    private float comissao;
-    private float beneficios;
-    private float eventuais;
-    private float horasExtras;
-    private float judiciais;
-    private float tetoRedutor;
-    private float IRRF;
-    private float contribPrev;
-    private float totalLiquido;
+    private Double remuneracao;
+    private Double comissao;
+    private Double beneficios;
+    private Double eventuais;
+    private Double horasExtras;
+    private Double judiciais;
+    private Double tetoRedutor;
+    private Double IRRF;
+    private Double contribPrev;
+    private String totalLiquido;
     private Orgao orgao;
 
     public LocalDate getPeriodo() {
@@ -22,83 +22,83 @@ public class ServidorAtivo extends Pessoa {
         this.periodo = periodo;
     }
 
-    public float getRemuneracao() {
+    public Double getRemuneracao() {
         return remuneracao;
     }
 
-    public void setRemuneracao(float remuneracao) {
+    public void setRemuneracao(Double remuneracao) {
         this.remuneracao = remuneracao;
     }
 
-    public float getComissao() {
+    public Double getComissao() {
         return comissao;
     }
 
-    public void setComissao(float comissao) {
+    public void setComissao(Double comissao) {
         this.comissao = comissao;
     }
 
-    public float getBeneficios() {
+    public Double getBeneficios() {
         return beneficios;
     }
 
-    public void setBeneficios(float beneficios) {
+    public void setBeneficios(Double beneficios) {
         this.beneficios = beneficios;
     }
 
-    public float getEventuais() {
+    public Double getEventuais() {
         return eventuais;
     }
 
-    public void setEventuais(float eventuais) {
+    public void setEventuais(Double eventuais) {
         this.eventuais = eventuais;
     }
 
-    public float getHorasExtras() {
+    public Double getHorasExtras() {
         return horasExtras;
     }
 
-    public void setHorasExtras(float horasExtras) {
+    public void setHorasExtras(Double horasExtras) {
         this.horasExtras = horasExtras;
     }
 
-    public float getJudiciais() {
+    public Double getJudiciais() {
         return judiciais;
     }
 
-    public void setJudiciais(float judiciais) {
+    public void setJudiciais(Double judiciais) {
         this.judiciais = judiciais;
     }
 
-    public float getTetoRedutor() {
+    public Double getTetoRedutor() {
         return tetoRedutor;
     }
 
-    public void setTetoRedutor(float tetoRedutor) {
+    public void setTetoRedutor(Double tetoRedutor) {
         this.tetoRedutor = tetoRedutor;
     }
 
-    public float getIRRF() {
+    public Double getIRRF() {
         return IRRF;
     }
 
-    public void setIRRF(float IRRF) {
+    public void setIRRF(Double IRRF) {
         this.IRRF = IRRF;
     }
 
-    public float getContribPrev() {
+    public Double getContribPrev() {
         return contribPrev;
     }
 
-    public void setContribPrev(float contribPrev) {
+    public void setContribPrev(Double contribPrev) {
         this.contribPrev = contribPrev;
     }
 
-    public float getTotalLiquido() {
+    public String getTotalLiquido() {
         return totalLiquido;
     }
 
-    public void setTotalLiquido(float totalLiquido) {
+    public void setTotalLiquido(String totalLiquido) {
         this.totalLiquido = totalLiquido;
     }
 
@@ -125,6 +125,8 @@ public class ServidorAtivo extends Pessoa {
                 ", contribPrev=" + contribPrev +
                 ", totalLiquido=" + totalLiquido +
                 ", orgao=" + orgao +
+                ", nome=" + getNome() +
+                ", cpf=" + getCpf() +
                 '}';
     }
 }
