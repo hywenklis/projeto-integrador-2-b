@@ -90,4 +90,20 @@ public class servidorInativo extends Pessoa {
 	public void setPrevidencia(float previdencia) {
 		this.previdencia = previdencia;
 	}
+
+	@Override
+	public String toString() {
+		return "servidorInativo{" +
+				"vinculo='" + vinculo + '\'' +
+				", total=" + total +
+				", liquido=" + liquido +
+				", proventos=" + proventos +
+				", eventuais=" + eventuais +
+				", judiciais=" + judiciais +
+				", tetoRedutor=" + tetoRedutor +
+				", irrf=" + irrf +
+				", contribuicao=" + contribuicao +
+				", previdencia=" + previdencia +
+				'}';
+	}
 }

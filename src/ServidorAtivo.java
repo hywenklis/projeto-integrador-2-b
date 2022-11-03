@@ -109,4 +109,22 @@ public class ServidorAtivo extends Pessoa {
     public void setOrgao(Orgao orgao) {
         this.orgao = orgao;
     }
+
+    @Override
+    public String toString() {
+        return "ServidorAtivo{" +
+                "periodo=" + periodo +
+                ", remuneracao=" + remuneracao +
+                ", comissao=" + comissao +
+                ", beneficios=" + beneficios +
+                ", eventuais=" + eventuais +
+                ", horasExtras=" + horasExtras +
+                ", judiciais=" + judiciais +
+                ", tetoRedutor=" + tetoRedutor +
+                ", IRRF=" + IRRF +
+                ", contribPrev=" + contribPrev +
+                ", totalLiquido=" + totalLiquido +
+                ", orgao=" + orgao +
+                '}';
+    }
 }
