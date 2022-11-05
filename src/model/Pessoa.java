@@ -1,3 +1,5 @@
+package model;
+
 public class Pessoa {
     private String cpf;
     private String nome;
@@ -20,7 +22,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "model.Pessoa{" +
                 "cpf='" + cpf + '\'' +
                 ", nome='" + nome + '\'' +
                 '}';
