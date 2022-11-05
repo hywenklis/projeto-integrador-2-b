@@ -22,7 +22,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "model.Pessoa{" +
+        return "Pessoa{" +
                 "cpf='" + cpf + '\'' +
                 ", nome='" + nome + '\'' +
                 '}';
