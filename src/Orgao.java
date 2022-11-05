@@ -49,5 +49,13 @@ public enum Orgao {
     UNEAL("UNIVERSIDADE ESTADUAL DE ALAGOAS"),
     UNCISAL("UNIVERSIDADE ESTADUAL DE CIENCIAS DA SAUDE DE ALAGOAS");
 
-    Orgao(String descricao){}
+
+    private final String descricao;
+    Orgao(String descricao){
+        this.descricao = descricao;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }

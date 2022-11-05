@@ -1,18 +1,23 @@
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class ServidorAtivo extends Pessoa {
     private LocalDate periodo;
-    private Double remuneracao;
-    private Double comissao;
-    private Double beneficios;
-    private Double eventuais;
+    private String remuneracao;
+    private String comissao;
+    private String beneficios;
+    private String eventuais;
     private String horasExtras;
-    private Double judiciais;
-    private Double tetoRedutor;
-    private Double IRRF;
-    private Double contribPrev;
+    private String judiciais;
+    private String tetoRedutor;
+    private String IRRF;
+    private String contribPrev;
     private String totalLiquido;
-    private Orgao orgao;
+    private String vinculo;
+    private String cargo;
+    private String funcao;
+    private Orgao orgaoSigla;
+    private String nomeOrgaoCompleto;
 
     public LocalDate getPeriodo() {
         return periodo;
@@ -22,35 +27,35 @@ public class ServidorAtivo extends Pessoa {
         this.periodo = periodo;
     }
 
-    public Double getRemuneracao() {
+    public String getRemuneracao() {
         return remuneracao;
     }
 
-    public void setRemuneracao(Double remuneracao) {
+    public void setRemuneracao(String remuneracao) {
         this.remuneracao = remuneracao;
     }
 
-    public Double getComissao() {
+    public String getComissao() {
         return comissao;
     }
 
-    public void setComissao(Double comissao) {
+    public void setComissao(String comissao) {
         this.comissao = comissao;
     }
 
-    public Double getBeneficios() {
+    public String getBeneficios() {
         return beneficios;
     }
 
-    public void setBeneficios(Double beneficios) {
+    public void setBeneficios(String beneficios) {
         this.beneficios = beneficios;
     }
 
-    public Double getEventuais() {
+    public String getEventuais() {
         return eventuais;
     }
 
-    public void setEventuais(Double eventuais) {
+    public void setEventuais(String eventuais) {
         this.eventuais = eventuais;
     }
 
@@ -62,35 +67,35 @@ public class ServidorAtivo extends Pessoa {
         this.horasExtras = horasExtras;
     }
 
-    public Double getJudiciais() {
+    public String getJudiciais() {
         return judiciais;
     }
 
-    public void setJudiciais(Double judiciais) {
+    public void setJudiciais(String judiciais) {
         this.judiciais = judiciais;
     }
 
-    public Double getTetoRedutor() {
+    public String getTetoRedutor() {
         return tetoRedutor;
     }
 
-    public void setTetoRedutor(Double tetoRedutor) {
+    public void setTetoRedutor(String tetoRedutor) {
         this.tetoRedutor = tetoRedutor;
     }
 
-    public Double getIRRF() {
+    public String getIRRF() {
         return IRRF;
     }
 
-    public void setIRRF(Double IRRF) {
+    public void setIRRF(String IRRF) {
         this.IRRF = IRRF;
     }
 
-    public Double getContribPrev() {
+    public String getContribPrev() {
         return contribPrev;
     }
 
-    public void setContribPrev(Double contribPrev) {
+    public void setContribPrev(String contribPrev) {
         this.contribPrev = contribPrev;
     }
 
@@ -102,31 +107,67 @@ public class ServidorAtivo extends Pessoa {
         this.totalLiquido = totalLiquido;
     }
 
-    public Orgao getOrgao() {
-        return orgao;
+    public String getVinculo() {
+        return vinculo;
     }
 
-    public void setOrgao(Orgao orgao) {
-        this.orgao = orgao;
+    public void setVinculo(String vinculo) {
+        this.vinculo = vinculo;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public String getFuncao() {
+        return funcao;
+    }
+
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+
+    public Orgao getOrgaoSigla() {
+        return orgaoSigla;
+    }
+
+    public void setOrgaoSigla(Orgao orgaoSigla) {
+        this.orgaoSigla = orgaoSigla;
+    }
+
+    public String getNomeOrgaoCompleto() {
+        return nomeOrgaoCompleto;
+    }
+
+    public void setNomeOrgaoCompleto(String nomeOrgaoCompleto) {
+        this.nomeOrgaoCompleto = nomeOrgaoCompleto;
     }
 
     @Override
     public String toString() {
         return "ServidorAtivo{" +
-                "periodo=" + periodo +
-                ", remuneracao=" + remuneracao +
-                ", comissao=" + comissao +
-                ", beneficios=" + beneficios +
-                ", eventuais=" + eventuais +
-                ", horasExtras=" + horasExtras +
-                ", judiciais=" + judiciais +
-                ", tetoRedutor=" + tetoRedutor +
-                ", IRRF=" + IRRF +
-                ", contribPrev=" + contribPrev +
-                ", totalLiquido=" + totalLiquido +
-                ", orgao=" + orgao +
-                ", nome=" + getNome() +
-                ", cpf=" + getCpf() +
+                " \n    periodo: " + periodo +
+                ",\n    remuneracao: " + remuneracao +
+                ",\n    comissao: " + comissao +
+                ",\n    beneficios: " + beneficios +
+                ",\n    eventuais: " + eventuais +
+                ",\n    horasExtras: '" + horasExtras + '\'' +
+                ",\n    judiciais: " + judiciais +
+                ",\n    tetoRedutor: " + tetoRedutor +
+                ",\n    IRRF: " + IRRF +
+                ",\n    contribPrev: " + contribPrev +
+                ",\n    totalLiquido: '" + totalLiquido + '\'' +
+                ",\n    vinculo: '" + vinculo + '\'' +
+                ",\n    cargo: '" + cargo + '\'' +
+                ",\n    funcao: '" + funcao + '\'' +
+                ",\n    orgao: " + orgaoSigla +
+                ",\n    nome do orgao completo: " + nomeOrgaoCompleto +
+                ",\n    nome: " + getNome() +
+                ",\n    cpf: " + getCpf() +
                 '}';
     }
 }

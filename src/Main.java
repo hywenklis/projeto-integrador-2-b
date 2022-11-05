@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.time.LocalDate;
 import java.util.Locale;
 
 public class Main {
@@ -13,11 +13,23 @@ public class Main {
         ServidorAtivo servidorAtivo = new ServidorAtivo();
         servidorAtivo.setCpf(pessoa.getCpf());
         servidorAtivo.setNome(pessoa.getNome());
-        servidorAtivo.setOrgao(Orgao.PO);
+        servidorAtivo.setOrgaoSigla(Orgao.PO);
+        servidorAtivo.setNomeOrgaoCompleto(Orgao.PO.getDescricao());
         servidorAtivo.setTotalLiquido(getDinheiroFormatado(758865));
         servidorAtivo.setHorasExtras(getDinheiroFormatado(50000));
-        
-        System.out.println(pessoa);
+        servidorAtivo.setVinculo("ESTATUTÁRIO");
+        servidorAtivo.setCargo("AGENTE DE POLICIA");
+        servidorAtivo.setFuncao("ASSESSOR DE COMUNICACAO");
+        servidorAtivo.setPeriodo(LocalDate.now());
+        servidorAtivo.setRemuneracao(getDinheiroFormatado(877652));
+        servidorAtivo.setComissao(getDinheiroFormatado(172017));
+        servidorAtivo.setBeneficios(getDinheiroFormatado(000));
+        servidorAtivo.setEventuais(getDinheiroFormatado(000));
+        servidorAtivo.setJudiciais(getDinheiroFormatado(000));
+        servidorAtivo.setTetoRedutor(getDinheiroFormatado(000));
+        servidorAtivo.setIRRF(getDinheiroFormatado(167933));
+        servidorAtivo.setContribPrev(getDinheiroFormatado(122871));
+
         System.out.println(servidorAtivo);
     }
 
