@@ -15,7 +15,8 @@ public class Main {
         servidorAtivo.setNome(pessoa.getNome());
         servidorAtivo.setOrgao(Orgao.PO);
         servidorAtivo.setTotalLiquido(getDinheiroFormatado(758865));
-
+        servidorAtivo.setHorasExtras(getDinheiroFormatado(50000));
+        
         System.out.println(pessoa);
         System.out.println(servidorAtivo);
     }

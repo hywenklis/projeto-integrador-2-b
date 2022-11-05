@@ -6,7 +6,7 @@ public class ServidorAtivo extends Pessoa {
     private Double comissao;
     private Double beneficios;
     private Double eventuais;
-    private Double horasExtras;
+    private String horasExtras;
     private Double judiciais;
     private Double tetoRedutor;
     private Double IRRF;
@@ -54,11 +54,11 @@ public class ServidorAtivo extends Pessoa {
         this.eventuais = eventuais;
     }
 
-    public Double getHorasExtras() {
+    public String getHorasExtras() {
         return horasExtras;
     }
 
-    public void setHorasExtras(Double horasExtras) {
+    public void setHorasExtras(String horasExtras) {
         this.horasExtras = horasExtras;
     }
 
