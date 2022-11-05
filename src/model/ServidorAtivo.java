@@ -52,11 +52,13 @@ public class ServidorAtivo extends Pessoa {
     @Override
     public String toString() {
         return "ServidorAtivo{" +
-                "cargo='" + cargo + '\'' +
-                ", funcao='" + funcao + '\'' +
-                ", orgaoSigla=" + orgaoSigla +
-                ", nomeOrgaoCompleto='" + nomeOrgaoCompleto + '\'' +
-                ", detalhes=" + detalhes +
+                "\n nome='" + getNome() + '\'' +
+                "\n, cpf='" + getCpf() + '\'' +
+        		"\n, cargo='" + cargo + '\'' +
+                "\n, funcao='" + funcao + '\'' +
+                "\n, orgaoSigla=" + orgaoSigla +
+                "\n, nomeOrgaoCompleto='" + nomeOrgaoCompleto + '\'' +
+                "\n, detalhes=" + detalhes +
                 '}';
     }
 }

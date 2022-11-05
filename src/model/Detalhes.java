@@ -26,7 +26,7 @@ public class Detalhes {
     public String toString() {
         return "Detalhes{" +
                 "periodos=" + periodos +
-                ", vinculo='" + vinculo + '\'' +
+                "\n, vinculo='" + vinculo + '\'' +
                 '}';
     }
 }
