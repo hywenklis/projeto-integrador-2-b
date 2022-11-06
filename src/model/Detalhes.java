@@ -25,6 +25,6 @@ public class Detalhes {
     @Override
     public String toString() {
         return "PERIODOS = '" + periodos + '\'' +
-                " \n\nVINCULOS = '" + vinculo + '\'';
+                " \n\nVINCULOS = '" + vinculo + '\'' + "\n";
     }
 }

@@ -13,6 +13,8 @@ public class ServidorInativo extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "\n DETALHES = '" + detalhes + '\'';
+		return "\n NOME = '" + getNome() + '\'' +
+				"\n CPF = '" + getCpf() + '\'' +
+				"\n DETALHES = '" + detalhes + '\'';
 	}
 }

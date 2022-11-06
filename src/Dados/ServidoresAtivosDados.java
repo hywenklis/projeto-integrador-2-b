@@ -79,7 +79,9 @@ public class ServidoresAtivosDados {
         servidorAtivo.setDetalhes(detalhes);
         servidoresAtivos.add(servidorAtivo);
 
-        System.out.print("===========SERVIDORES ATIVOS===========");
+        System.out.println("=======================================");
+        System.out.println("===========SERVIDORES ATIVOS===========");
+        System.out.println("=======================================");
         servidoresAtivos.forEach(System.out::println);
     }
 }
