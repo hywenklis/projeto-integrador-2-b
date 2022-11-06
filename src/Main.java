@@ -82,11 +82,9 @@ public class Main {
     	servidorAtivo.setNomeOrgaoCompleto(Orgao.PO.getDescricao());
     	servidorAtivo.setDetalhes(detalhes);
     	servidoresAtivos.add(servidorAtivo);
-    	
-    	
+
+		System.out.print("===========SERVIDORES ATIVOS===========");
     	servidoresAtivos.forEach(System.out::println);
-    	
-    	
     }
 
     private static String getDinheiroFormatado(Integer dinheiro){

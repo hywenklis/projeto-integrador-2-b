@@ -103,18 +103,18 @@ public class Orcamento {
 
     @Override
     public String toString() {
-        return "Orcamento{" +
-                "remuneracao='" + remuneracao + '\'' +
-                ", comissao='" + comissao + '\'' +
-                ", beneficios='" + beneficios + '\'' +
-                ", eventuais='" + eventuais + '\'' +
-                ", horasExtras='" + horasExtras + '\'' +
-                ", judiciais='" + judiciais + '\'' +
-                ", tetoRedutor='" + tetoRedutor + '\'' +
-                ", IRRF='" + IRRF + '\'' +
-                ", contribPrev='" + contribPrev + '\'' +
-                ", totalLiquido='" + totalLiquido + '\'' +
-                ", proventos='" + proventos + '\'' +
-                '}';
+        return
+                "REMUNERAÇÃO = '" + remuneracao + '\'' +
+                "COMISSÃO = '" + comissao + '\'' +
+                "BENEFÍCIOS = '" + beneficios + '\'' +
+                "EVENTUAIS = '" + eventuais + '\'' +
+                "HORAS EXTRAS = '" + horasExtras + '\'' +
+                "JUDICIAIS = '" + judiciais + '\'' +
+                "TETO REDUTOR = '" + tetoRedutor + '\'' +
+                "IRRF = '" + IRRF + '\'' +
+                "CONTRIBUIÇÃO = '" + contribPrev + '\'' +
+                "TOTAL LIQUIDO = '" + totalLiquido + '\'' +
+                "PROVENTOS = '" + proventos + '\'' +
+                "\n";
     }
 }

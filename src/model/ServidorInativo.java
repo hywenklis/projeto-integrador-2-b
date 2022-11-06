@@ -13,8 +13,6 @@ public class ServidorInativo extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "ServidorInativo{" +
-				"detalhes=" + detalhes +
-				'}';
+		return "\n DETALHES = '" + detalhes + '\'';
 	}
 }

@@ -22,9 +22,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "cpf='" + cpf + '\'' +
-                ", nome='" + nome + '\'' +
-                '}';
+        return "\n NOME = '" + nome + '\'' +
+                "\n CPF = '" + cpf + '\'';
     }
 }
