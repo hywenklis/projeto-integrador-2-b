@@ -2,8 +2,6 @@ package model;
 
 import java.time.LocalDate;
 
-import model.Orcamento;
-
 public class Periodo {
     private Orcamento orcamento;
     private LocalDate periodo;

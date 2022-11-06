@@ -1,17 +1,16 @@
+import enums.Orgao;
+import model.Detalhes;
+import model.Orcamento;
+import model.Periodo;
+import model.ServidorAtivo;
+import model.ServidorInativo;
+
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
-import enums.Orgao;
-import model.Detalhes;
-import model.Orcamento;
-import model.Periodo;
-import model.Pessoa;
-import model.ServidorAtivo;
-import model.ServidorInativo;
 
 public class Main {
     public static void main(String[] args) {
