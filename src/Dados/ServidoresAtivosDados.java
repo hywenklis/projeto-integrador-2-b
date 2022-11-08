@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static utils.Formatacao.getDinheiroFormatado;
+import static utils.Formatacao.getDataFormatada;
 
 public class ServidoresAtivosDados {
     public static void dadosServidoresAtivos() {
@@ -59,7 +60,7 @@ public class ServidoresAtivosDados {
         orcamento3.setTotalLiquido(getDinheiroFormatado(758865));
 
         periodo1.setOrcamento(orcamento1);
-        periodo1.setPeriodo(LocalDate.now());
+        periodo1.setPeriodo(LocalDate.parse(getDataFormatada(LocalDate.now())));
 
         periodo2.setOrcamento(orcamento2);
         periodo2.setPeriodo(LocalDate.now());
