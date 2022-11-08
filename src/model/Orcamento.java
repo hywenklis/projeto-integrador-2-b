@@ -1,120 +1,126 @@
 package model;
 
-public class Orcamento {
-    private String remuneracao;
-    private String comissao;
-    private String beneficios;
-    private String eventuais;
-    private String horasExtras;
-    private String judiciais;
-    private String tetoRedutor;
-    private String IRRF;
-    private String contribPrev;
-    private String totalLiquido;
-    private String proventos;
+import utils.Formatacao;
 
-    public String getRemuneracao() {
+import java.math.BigDecimal;
+
+import static utils.Formatacao.formatarEmReais;
+
+public class Orcamento {
+    private BigDecimal remuneracao;
+    private BigDecimal comissao;
+    private BigDecimal beneficios;
+    private BigDecimal eventuais;
+    private BigDecimal horasExtras;
+    private BigDecimal judiciais;
+    private BigDecimal tetoRedutor;
+    private BigDecimal IRRF;
+    private BigDecimal contribPrev;
+    private BigDecimal totalLiquido;
+    private BigDecimal proventos;
+
+    public BigDecimal getRemuneracao() {
         return remuneracao;
     }
 
-    public void setRemuneracao(String remuneracao) {
+    public void setRemuneracao(BigDecimal remuneracao) {
         this.remuneracao = remuneracao;
     }
 
-    public String getComissao() {
+    public BigDecimal getComissao() {
         return comissao;
     }
 
-    public void setComissao(String comissao) {
+    public void setComissao(BigDecimal comissao) {
         this.comissao = comissao;
     }
 
-    public String getBeneficios() {
+    public BigDecimal getBeneficios() {
         return beneficios;
     }
 
-    public void setBeneficios(String beneficios) {
+    public void setBeneficios(BigDecimal beneficios) {
         this.beneficios = beneficios;
     }
 
-    public String getEventuais() {
+    public BigDecimal getEventuais() {
         return eventuais;
     }
 
-    public void setEventuais(String eventuais) {
+    public void setEventuais(BigDecimal eventuais) {
         this.eventuais = eventuais;
     }
 
-    public String getHorasExtras() {
+    public BigDecimal getHorasExtras() {
         return horasExtras;
     }
 
-    public void setHorasExtras(String horasExtras) {
+    public void setHorasExtras(BigDecimal horasExtras) {
         this.horasExtras = horasExtras;
     }
 
-    public String getJudiciais() {
+    public BigDecimal getJudiciais() {
         return judiciais;
     }
 
-    public void setJudiciais(String judiciais) {
+    public void setJudiciais(BigDecimal judiciais) {
         this.judiciais = judiciais;
     }
 
-    public String getTetoRedutor() {
+    public BigDecimal getTetoRedutor() {
         return tetoRedutor;
     }
 
-    public void setTetoRedutor(String tetoRedutor) {
+    public void setTetoRedutor(BigDecimal tetoRedutor) {
         this.tetoRedutor = tetoRedutor;
     }
 
-    public String getIRRF() {
+    public BigDecimal getIRRF() {
         return IRRF;
     }
 
-    public void setIRRF(String IRRF) {
+    public void setIRRF(BigDecimal IRRF) {
         this.IRRF = IRRF;
     }
 
-    public String getContribPrev() {
+    public BigDecimal getContribPrev() {
         return contribPrev;
     }
 
-    public void setContribPrev(String contribPrev) {
+    public void setContribPrev(BigDecimal contribPrev) {
         this.contribPrev = contribPrev;
     }
 
-    public String getTotalLiquido() {
+    public BigDecimal getTotalLiquido() {
         return totalLiquido;
     }
 
-    public void setTotalLiquido(String totalLiquido) {
+    public void setTotalLiquido(BigDecimal totalLiquido) {
         this.totalLiquido = totalLiquido;
     }
 
-    public String getProventos() {
+    public BigDecimal getProventos() {
         return proventos;
     }
 
-    public void setProventos(String proventos) {
+    public void setProventos(BigDecimal proventos) {
         this.proventos = proventos;
     }
 
     @Override
     public String toString() {
         return
-                "REMUNERAÇÃO = '" + remuneracao + '\'' +
-                "COMISSÃO = '" + comissao + '\'' +
-                "BENEFÍCIOS = '" + beneficios + '\'' +
-                "EVENTUAIS = '" + eventuais + '\'' +
-                "HORAS EXTRAS = '" + horasExtras + '\'' +
-                "JUDICIAIS = '" + judiciais + '\'' +
-                "TETO REDUTOR = '" + tetoRedutor + '\'' +
-                "IRRF = '" + IRRF + '\'' +
-                "CONTRIBUIÇÃO = '" + contribPrev + '\'' +
-                "TOTAL LIQUIDO = '" + totalLiquido + '\'' +
-                "PROVENTOS = '" + proventos + '\'' +
+                "REMUNERAÇÃO = '" + formatarEmReais(remuneracao) + '\'' +
+                "COMISSÃO = '" + formatarEmReais(comissao) + '\'' +
+                "BENEFÍCIOS = '" + formatarEmReais(beneficios) + '\'' +
+                "EVENTUAIS = '" + formatarEmReais(eventuais) + '\'' +
+                "HORAS EXTRAS = '" + formatarEmReais(horasExtras) + '\'' +
+                "JUDICIAIS = '" + formatarEmReais(judiciais) + '\'' +
+                "TETO REDUTOR = '" + formatarEmReais(tetoRedutor) + '\'' +
+                "IRRF = '" + formatarEmReais(IRRF) + '\'' +
+                "CONTRIBUIÇÃO = '" + formatarEmReais(contribPrev) + '\'' +
+                "TOTAL LIQUIDO = '" + formatarEmReais(totalLiquido) + '\'' +
+                "PROVENTOS = '" + formatarEmReais(proventos) + '\'' +
                 "\n";
     }
 }

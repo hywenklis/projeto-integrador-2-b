@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static utils.Formatacao.getDinheiroFormatado;
+import static java.math.BigDecimal.valueOf;
 
 public class ServidoresAtivosDados {
     public static void dadosServidoresAtivos() {
@@ -25,38 +25,38 @@ public class ServidoresAtivosDados {
         Orcamento orcamento2 = new Orcamento();
         Orcamento orcamento3 = new Orcamento();
 
-        orcamento1.setRemuneracao(getDinheiroFormatado(877652));
-        orcamento1.setComissao(getDinheiroFormatado(172017));
-        orcamento1.setBeneficios(getDinheiroFormatado(000));
-        orcamento1.setEventuais(getDinheiroFormatado(000));
-        orcamento1.setHorasExtras(getDinheiroFormatado(000));
-        orcamento1.setJudiciais(getDinheiroFormatado(000));
-        orcamento1.setTetoRedutor(getDinheiroFormatado(000));
-        orcamento1.setIRRF(getDinheiroFormatado(167933));
-        orcamento1.setContribPrev(getDinheiroFormatado(122871));
-        orcamento1.setTotalLiquido(getDinheiroFormatado(758865));
+        orcamento1.setRemuneracao(valueOf(8776.52));
+        orcamento1.setComissao(valueOf(1720.17));
+        orcamento1.setBeneficios(valueOf(0));
+        orcamento1.setEventuais(valueOf(0));
+        orcamento1.setHorasExtras(valueOf(0));
+        orcamento1.setJudiciais(valueOf(0));
+        orcamento1.setTetoRedutor(valueOf(0));
+        orcamento1.setIRRF(valueOf(1679.33));
+        orcamento1.setContribPrev(valueOf(1228.71));
+        orcamento1.setTotalLiquido(valueOf(7588.65));
 
-        orcamento2.setRemuneracao(getDinheiroFormatado(877652));
-        orcamento2.setComissao(getDinheiroFormatado(172017));
-        orcamento2.setBeneficios(getDinheiroFormatado(000));
-        orcamento2.setEventuais(getDinheiroFormatado(000));
-        orcamento2.setHorasExtras(getDinheiroFormatado(000));
-        orcamento2.setJudiciais(getDinheiroFormatado(000));
-        orcamento2.setTetoRedutor(getDinheiroFormatado(000));
-        orcamento2.setIRRF(getDinheiroFormatado(167933));
-        orcamento2.setContribPrev(getDinheiroFormatado(122871));
-        orcamento2.setTotalLiquido(getDinheiroFormatado(758865));
+        orcamento2.setRemuneracao(valueOf(8776.52));
+        orcamento2.setComissao(valueOf(1720.17));
+        orcamento2.setBeneficios(valueOf(0));
+        orcamento2.setEventuais(valueOf(0));
+        orcamento2.setHorasExtras(valueOf(0));
+        orcamento2.setJudiciais(valueOf(0));
+        orcamento2.setTetoRedutor(valueOf(0));
+        orcamento2.setIRRF(valueOf(1679.33));
+        orcamento2.setContribPrev(valueOf(1228.71));
+        orcamento2.setTotalLiquido(valueOf(7588.65));
 
-        orcamento3.setRemuneracao(getDinheiroFormatado(877652));
-        orcamento3.setComissao(getDinheiroFormatado(172017));
-        orcamento3.setBeneficios(getDinheiroFormatado(000));
-        orcamento3.setEventuais(getDinheiroFormatado(000));
-        orcamento3.setHorasExtras(getDinheiroFormatado(000));
-        orcamento3.setJudiciais(getDinheiroFormatado(000));
-        orcamento3.setTetoRedutor(getDinheiroFormatado(000));
-        orcamento3.setIRRF(getDinheiroFormatado(167933));
-        orcamento3.setContribPrev(getDinheiroFormatado(122871));
-        orcamento3.setTotalLiquido(getDinheiroFormatado(758865));
+        orcamento3.setRemuneracao(valueOf(8776.52));
+        orcamento3.setComissao(valueOf(1720.17));
+        orcamento3.setBeneficios(valueOf(0));
+        orcamento3.setEventuais(valueOf(0));
+        orcamento3.setHorasExtras(valueOf(0));
+        orcamento3.setJudiciais(valueOf(0));
+        orcamento3.setTetoRedutor(valueOf(0));
+        orcamento3.setIRRF(valueOf(1679.33));
+        orcamento3.setContribPrev(valueOf(1228.71));
+        orcamento3.setTotalLiquido(valueOf(7588.65));
 
         periodo1.setOrcamento(orcamento1);
         periodo1.setPeriodo(LocalDate.now());

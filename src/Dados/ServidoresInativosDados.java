@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static utils.Formatacao.getDinheiroFormatado;
+import static java.math.BigDecimal.valueOf;
 
 public class ServidoresInativosDados {
     public static void dadosServidorInativos() {
@@ -20,13 +20,13 @@ public class ServidoresInativosDados {
         Periodo periodo1 = new Periodo();
         Orcamento orcamento1 = new Orcamento();
 
-        orcamento1.setProventos(getDinheiroFormatado(456));
-        orcamento1.setEventuais(getDinheiroFormatado(456));
-        orcamento1.setJudiciais(getDinheiroFormatado(456));
-        orcamento1.setTetoRedutor(getDinheiroFormatado(456));
-        orcamento1.setIRRF(getDinheiroFormatado(456));
-        orcamento1.setContribPrev(getDinheiroFormatado(456));
-        orcamento1.setTotalLiquido(getDinheiroFormatado(456));
+        orcamento1.setProventos(valueOf(4.56));
+        orcamento1.setEventuais(valueOf(4.56));
+        orcamento1.setJudiciais(valueOf(4.56));
+        orcamento1.setTetoRedutor(valueOf(4.56));
+        orcamento1.setIRRF(valueOf(4.56));
+        orcamento1.setContribPrev(valueOf(4.56));
+        orcamento1.setTotalLiquido(valueOf(4.56));
 
         periodo1.setOrcamento(orcamento1);
         periodo1.setPeriodo(LocalDate.now());
