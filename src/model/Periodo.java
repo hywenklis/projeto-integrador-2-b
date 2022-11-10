@@ -25,7 +25,7 @@ public class Periodo {
     @Override
     public String toString() {
         return "\n" +
-                "    \nPERIODO = '" + periodo + "'" +
+                "    \nPERIODO = '" + periodo.getYear() + "/" + periodo.getMonth().getValue() + "'" +
                 "\n    ORÇAMENTO = '" + orcamento;
     }
 }
