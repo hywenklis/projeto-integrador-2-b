@@ -27,6 +27,10 @@ public class ServidoresInativosDados {
         orcamento1.setIRRF(valueOf(4.56));
         orcamento1.setContribPrev(valueOf(4.56));
         orcamento1.setTotalLiquido(valueOf(4.56));
+        orcamento1.setRemuneracao(valueOf(0));
+        orcamento1.setComissao(valueOf(0));
+        orcamento1.setBeneficios(valueOf(0));
+        orcamento1.setHorasExtras(valueOf(0));
 
         periodo1.setOrcamento(orcamento1);
         periodo1.setPeriodo(LocalDate.now());

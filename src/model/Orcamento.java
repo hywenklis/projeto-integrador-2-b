@@ -4,7 +4,8 @@ import utils.Formatacao;
 
 import java.math.BigDecimal;
 
-import static utils.Formatacao.formatarEmReais;
+import static java.lang.String.valueOf;
+import static utils.Formatacao.*;
 
 public class Orcamento {
     private BigDecimal remuneracao;

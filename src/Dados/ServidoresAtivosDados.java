@@ -5,13 +5,15 @@ import model.Detalhes;
 import model.Orcamento;
 import model.Periodo;
 import model.ServidorAtivo;
+import utils.Formatacao;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import static java.math.BigDecimal.valueOf;
-import static utils.Formatacao.getDataFormatada;
+import static utils.Formatacao.*;
+
 
 public class ServidoresAtivosDados {
     public static void dadosServidoresAtivos() {
@@ -36,6 +38,7 @@ public class ServidoresAtivosDados {
         orcamento1.setIRRF(valueOf(1679.33));
         orcamento1.setContribPrev(valueOf(1228.71));
         orcamento1.setTotalLiquido(valueOf(7588.65));
+        orcamento1.setProventos(valueOf(0));
 
         orcamento2.setRemuneracao(valueOf(8776.52));
         orcamento2.setComissao(valueOf(1720.17));
@@ -47,6 +50,7 @@ public class ServidoresAtivosDados {
         orcamento2.setIRRF(valueOf(1679.33));
         orcamento2.setContribPrev(valueOf(1228.71));
         orcamento2.setTotalLiquido(valueOf(7588.65));
+        orcamento2.setProventos(valueOf(0));
 
         orcamento3.setRemuneracao(valueOf(8776.52));
         orcamento3.setComissao(valueOf(1720.17));
@@ -57,10 +61,11 @@ public class ServidoresAtivosDados {
         orcamento3.setTetoRedutor(valueOf(0));
         orcamento3.setIRRF(valueOf(1679.33));
         orcamento3.setContribPrev(valueOf(1228.71));
-        orcamento3.setTotalLiquido(valueOf(7588.65));
+        orcamento3.setTotalLiquido(valueOf(758865));
+        orcamento3.setProventos(valueOf(0));
 
         periodo1.setOrcamento(orcamento1);
-        periodo1.setPeriodo(LocalDate.parse(getDataFormatada(LocalDate.now())));
+        periodo1.setPeriodo(LocalDate.now());
 
         periodo2.setOrcamento(orcamento2);
         periodo2.setPeriodo(LocalDate.now());
